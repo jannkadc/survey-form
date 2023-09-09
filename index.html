@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Portfolio Survey Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intital-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">My Portfolio Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+                <label id="name-label">Name 
+                <input type="text" id="name" name="name" placeholder="  Enter your name" required></label>
+                <label id="email-label">Email 
+                <input type="email" id="email" name="email" placeholder="  Enter your email" required></label>
+                <label id="number-label">Age 
+                <input type="number" id="number" id="number" min="10" max="100" placeholder="  Age"></label>
+                <label for="current-role">Which option describes your current role?
+                    <select id="dropdown" name="current-role">
+                        <option value="">(Select current role)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+ 
+                <label id="recommend">Would you recommend freeCodeCamp?</label>
+                <input type="radio" value="definitely" name="recommend" class="inline"> Definitely
+                <input type="radio" value="maybe" name="recommend" class="inline"> Maybe
+                <input type="radio" value="not-sure" name="recommend" class="inline"> Not sure
+                
+                <p id="favorite">What is your favorite feature of freeCodeCamp? <span>(Check all that apply)</span>
+                <input type="checkbox" id="favorite" value="favorite" name="fe" class="inline"> <label>Front-end Projects</label>
+                <input type="checkbox" id="favorite" value="favorite"  name="be" class="inline"> <label>Back-end Projects</label>
+                <input type="checkbox" id="favorite" value="favorite"  name="dv" class="inline"> <label>Data Visualization</label>
+                <input type="checkbox" id="favorite" value="favorite"  name="c" class="inline"> <label>Challenges</label>
+                <input type="checkbox" id="favorite" value="favorite "  name="os" class="inline"> <label>Open source community</label>
+                    </ul>
+                </p>
+
+                <p>What would you like to see improved?</p>
+                    <select>
+                        <option value="">(Select an option)</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Open surce</option>
+                    </select>
+                <label>Any comments or suggestions?<textarea id="comments" name="comments" placeholder="Enter your comment here" row="40" cols="100"></textarea>
+                <input type="submit" id="submit"></label>
+        </form>
+    </body>
+</html>
